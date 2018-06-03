@@ -1,0 +1,77 @@
+body {
+  font-family: 'Architects Daughter', cursive;
+  text-transform: uppercase;
+  background: linear-gradient(-45deg, #001031, #003413);
+  background-size: 200% 200%;
+  animation: Gradient 30s ease infinite;
+  text-align: center;
+  color: #fff;
+  width: 100wh;
+	height: 90vh;
+}
+#content {
+  width: max-content;
+  margin: 0 auto;
+}
+#content.switch {
+  opacity: 0.2;
+  transition: all 3s;
+}
+#arrived {
+  opacity: 0.0;
+}
+#arrived.switch {
+  opacity: 1.0;
+  transition: all 5s;
+}
+h1 {
+  font-weight: 100;
+  font-size: 3em;
+}
+p {
+  margin: 0;
+}
+.unit {
+  display: inline-block;
+  width: max-content;
+  font-family: 'Teko', sans-serif;
+}
+.number {
+  font-size: 8em;
+  font-weight: 100;
+  line-height: 0.8em;
+}
+.descriptor {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1.5em;
+  line-height: .4em;
+  color: rgba(255,255,255,0.5);
+}
+.colon {
+  position: relative;
+  bottom: 0.25em;
+}
+p.note {
+  font-size: 1.2em;
+  color: rgba(255,255,255,0.5);
+}
+#arrived p.note {
+  line-height: 0.1em;
+}
+@media screen and (max-width: 800px) {
+  h1 { font-size: 2em; }
+  .number { font-size: 80px; }
+  .descriptor { font-size: 1em; }
+}
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
