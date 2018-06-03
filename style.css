@@ -75,3 +75,6 @@ p.note {
 		background-position: 0% 50%
 	}
 }
+#log {
+  font-family: 'Courier New', Courier, monospace;
+}

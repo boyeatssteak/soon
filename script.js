@@ -1,5 +1,5 @@
 let now = new Date();
-let expire = new Date('June 27, 2018 21:59:23 GMT -0700');
+let expire = new Date(Date.UTC(2018, 5, 28, 4, 59, 23));
 // let expire = new Date('June 02, 2018 23:45:30 GMT -0700');
 let remaining = Math.floor((expire - now) / 1000);
 let daysElement = document.getElementById("dispDays");
@@ -39,3 +39,14 @@ let on = setInterval(function(){
     arrived();
   }
 }, 1000);
+// let logElement = document.getElementById("log");
+// function log(message) {
+//   let line = document.createElement("div");
+//   line.innerHTML = "LOG: " + message;
+//   logElement.appendChild(line);
+// }
+// log(now);
+// log(expire);
+// log(remaining);
+// let expire2 = new Date(Date.UTC(2018, 5, 28, 4, 59, 23));
+// log(expire2);
