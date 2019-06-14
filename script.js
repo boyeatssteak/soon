@@ -1,6 +1,6 @@
 let now = new Date();
-let expire = new Date(Date.UTC(2018, 5, 28, 4, 59, 23));
-// let expire = new Date('June 02, 2018 23:45:30 GMT -0700');
+// let expire = new Date(Date.UTC(2018, 5, 28, 4, 59, 23));
+let expire = new Date('June 16, 2019 16:35:00 GMT -0700');
 let remaining = Math.floor((expire - now) / 1000);
 let daysElement = document.getElementById("dispDays");
 let hoursElement = document.getElementById("dispHours");
